@@ -1,0 +1,14 @@
+.card {
+    width: 10rem;
+    border-color: #fff;
+}
+
+#imgCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
