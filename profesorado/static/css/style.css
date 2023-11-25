@@ -1,3 +1,8 @@
+.logoImg {
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
 .card {
     width: 10rem;
     border-color: #fff;

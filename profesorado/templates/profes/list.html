@@ -9,7 +9,7 @@
       {% for profe in profes %}
         <div class="col">
           <div class="card">
-            <img id="imgCard" src="{% static 'img/no_image.jpg' %}" class="card-img-top" alt="..." />
+            <img id="imgCard" src="{% if profe.image %}{{ profe.image.url }}{% else %}{% static "img/no_image.jpg" %}{% endif %}" class="card-img-top" />
             <div class="card-body">
               <p class="card-title">{{ profe.name }}</p>
             </div>
