@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div>
+    <div>
+      <img src="{% if profe.image %}{{ profe.image.url }}{% else %}{% static "img/no_image.jpg" %}{% endif %}" alt="" />
+      <p class="card-title">{{ profe.name }}</p>
+    </div>
+  </div>
+{% endblock %}

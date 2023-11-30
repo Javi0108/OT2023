@@ -12,12 +12,21 @@
     padding-bottom: 5%;
 }
 
-.card {
-    width: 10rem;
+#personCard {
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
     border-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+#personCard:hover {
+    box-shadow: 5px 5px 5px 5px rgba(148, 148, 148, 0.3);
 }
 
 #imgCard {
