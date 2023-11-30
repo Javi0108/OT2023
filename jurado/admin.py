@@ -4,7 +4,7 @@ import datetime
 from django.contrib import admin
 from django.http import HttpResponse
 
-from .models import Profesorado
+from .models import Jurado
 
 
 def export_to_csv(modeladmin, request, queryset):
@@ -33,8 +33,8 @@ def export_to_csv(modeladmin, request, queryset):
 export_to_csv.short_description = 'Export to CSV'
 
 
-@admin.register(Profesorado)
-class ProfesoradoAdmin(admin.ModelAdmin):
-    list_display = ['name', 'image', 'origen', 'edad', 'description']
+@admin.register(Jurado)
+class JuradoAdmin(admin.ModelAdmin):
+    list_display = ['name', 'is_from', 'description', 'avatar']
     prepopulated_fields = {'slug': ('name',)}
     actions = [export_to_csv]

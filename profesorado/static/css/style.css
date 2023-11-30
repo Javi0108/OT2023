@@ -60,14 +60,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 45px;
+    padding: 5%;
 }
 
-#dataProfe h5 i {
-    margin: 5px;
+#dataProfe div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: baseline;
 }
-
-#dataProfe p i {
-    margin: 5px;
-}
-
