@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-  <div>
-    <div>
+  <div id="data">
+    <div id="imgProfe">
       <img src="{% if profe.image %}{{ profe.image.url }}{% else %}{% static "img/no_image.jpg" %}{% endif %}" alt="" />
-      <p class="card-title">{{ profe.name }}</p>
+      <h2 class="card-title">{{ profe.name }}</h2>
+    </div>
+    <div id="dataProfe">
+      <h5 class="bi bi-geo-alt"> {{profe.origen}}</h5>
+      <h5 class="bi bi-cake2">{{profe.edad}} años</h5>
+      <p class="bi bi-clipboard-plus"> {{profe.description}}</p>
     </div>
   </div>
 {% endblock %}

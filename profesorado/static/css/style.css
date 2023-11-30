@@ -12,6 +12,7 @@
     padding-bottom: 5%;
 }
 
+/* Profesorado List */
 #personCard {
     margin-top: 20px;
     padding: 10px;
@@ -34,3 +35,39 @@
     width: 100px;
     border-radius: 50%;
 }
+
+/* Profesorado Detail */
+#data {
+    display: flex;
+    flex-direction: row;
+}
+
+#imgProfe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#imgProfe img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#dataProfe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#dataProfe h5 i {
+    margin: 5px;
+}
+
+#dataProfe p i {
+    margin: 5px;
+}
+
