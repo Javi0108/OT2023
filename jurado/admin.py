@@ -35,6 +35,6 @@ export_to_csv.short_description = 'Export to CSV'
 
 @admin.register(Jurado)
 class JuradoAdmin(admin.ModelAdmin):
-    list_display = ['name', 'is_from', 'description', 'avatar']
+    list_display = ['name', 'age', 'is_from', 'description', 'avatar']
     prepopulated_fields = {'slug': ('name',)}
     actions = [export_to_csv]
