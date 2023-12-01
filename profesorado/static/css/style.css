@@ -13,6 +13,12 @@
 }
 
 /* Profesorado List */
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
 #personCard {
     margin-top: 20px;
     padding: 10px;
@@ -21,7 +27,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
