@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'profesorado.apps.ProfesoradoConfig',
     'jurado.apps.JuradoConfig',
+    'alumnado.apps.AlumnadoConfig',
 ]
 
 MIDDLEWARE = [

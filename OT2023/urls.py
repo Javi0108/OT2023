@@ -25,6 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', profesorado_views.dashboard),
     path('profesorado/', include('profesorado.urls', namespace='profesorado')),
+    path('jurado/', include('jurado.urls', namespace='jurado')),
+    path('alumnado/', include('alumnado.urls', namespace='alumnado')),
 ]
 
 if settings.DEBUG:

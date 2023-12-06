@@ -1,24 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-  Jurado
+  Alumnado
 {% endblock %}
 {% block content %}
   <div class="container text-center">
     <div class="row justify-content-center align-content-center">
-      {% for jurado in jurados %}
+      {% for alumnado in alumnados %}
         <div class="col-2 justify-content-center" style="display: flex;">
-          <a href="{% url 'jurado:jurado_detail' jurado.slug %}">
+          <a href="{% url 'alumnado:alumnado_detail' alumnado.slug %}">
             <div class="card" id="personCard">
               <img id="imgCard"
-                src="{% if jurado.avatar %}
-                  {{ jurado.avatar.url }}
+                src="{% if alumnado.avatar %}
+                  {{ alumnado.avatar.url }}
                 {% else %}
                   {% static 'img/no_image.jpg' %}
                 {% endif %}"
                 class="card-img-top" />
               <div class="card-body">
-                <p class="card-title">{{ jurado.name }}</p>
+                <p class="card-title">{{ alumnado.name }}</p>
               </div>
             </div>
           </a>

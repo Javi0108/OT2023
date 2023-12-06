@@ -3,25 +3,33 @@
 {% block content %}
   <div id="data">
     <div id="imgProfe">
-      <img src="{% if jurado.avatar %}
-          {{ jurado.avatar.url }}
+      <img src="{% if alumnado.avatar %}
+          {{ alumnado.avatar.url }}
         {% else %}
           {% static 'img/no_image.jpg' %}
         {% endif %}" />
-      <h2 class="card-title">{{ jurado.name }}</h2>
+      <h2 class="card-title">{{ alumnado.name }}</h2>
     </div>
     <div id="dataProfe">
       <div>
         <i class="bi bi-geo-fill" style="font-size: 30px;"></i>
-        <h5>{{ jurado.is_from }}</h5>
+        <h5>{{ alumnado.is_from }}</h5>
       </div>
       <div>
         <i class="bi bi-person-fill" style="font-size: 30px;"></i>
-        <h5>{{ jurado.age }} años</h5>
+        <h5>{{ alumnado.birthday }}</h5>
       </div>
       <div>
         <i class="bi bi-info-circle-fill" style="font-size: 30px;"></i>
-        <p>{{ jurado.description }}</p>
+        <p>{{ alumnado.job }}</p>
+      </div>
+      <div>
+        <i class="bi bi-emoji-smile-upside-down-fill" style="font-size: 30px;"></i>
+        <p>{{ alumnado.hobbies }}</p>
+      </div>
+      <div>
+        <i class="bi bi-music-note-list" style="font-size: 30px;"></i>
+        <p>{{ alumnado.music_style }}</p>
       </div>
     </div>
   </div>
