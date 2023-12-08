@@ -12,6 +12,7 @@
             <div class="card" id="personCard">
               <img id="imgCard"
                 src="{% if alumnado.avatar %}
+                {% comment %} Falta añadir filtro para alumnado eliminado {% endcomment %}
                   {{ alumnado.avatar.url }}
                 {% else %}
                   {% static 'img/no_image.jpg' %}

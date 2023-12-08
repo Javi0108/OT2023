@@ -35,7 +35,16 @@ export_to_csv.short_description = 'Export to CSV'
 
 @admin.register(Alumnado)
 class AlumnadoAdmin(admin.ModelAdmin):
-    list_display = ['name', 'birthday', 'is_from', 'job', 'hobbies', 'avatar', 'music_style']
+    list_display = [
+        'name',
+        'birthday',
+        'is_from',
+        'job',
+        'hobbies',
+        'avatar',
+        'eliminated',
+        'music_style',
+    ]
     prepopulated_fields = {'slug': ('name',)}
     actions = [export_to_csv]
 

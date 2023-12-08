@@ -17,6 +17,7 @@ class Alumnado(models.Model):
     job = models.CharField(max_length=250)
     hobbies = models.CharField(max_length=250)
     avatar = models.ImageField(upload_to='media/%Y/%m/%d', blank=True)
+    eliminated = models.BooleanField(null=True)
     music_style = models.ManyToManyField(MusicStyle)
 
     def __str__(self):
