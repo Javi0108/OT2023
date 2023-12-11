@@ -6,6 +6,9 @@ from .models import Profesorado
 def dashboard(request):
     return render(request, 'dashboard.html', {'section': 'dashboard'})
 
+def live(request):
+    return render(request, 'live.html', {'section': 'live'})
+
 
 def profesorado_list(request):
     profes = Profesorado.objects.all()

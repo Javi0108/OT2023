@@ -138,3 +138,13 @@ a {
     gap: 15px;
     align-items: baseline;
 }
+
+/* Live 24h */
+.content {
+    text-align: center;
+}
+
+iframe {
+    width: 75%;
+    height: 750px;
+}

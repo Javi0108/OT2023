@@ -24,6 +24,7 @@ from profesorado import views as profesorado_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', profesorado_views.dashboard),
+    path('live/', profesorado_views.live),
     path('profesorado/', include('profesorado.urls', namespace='profesorado')),
     path('jurado/', include('jurado.urls', namespace='jurado')),
     path('alumnado/', include('alumnado.urls', namespace='alumnado')),
