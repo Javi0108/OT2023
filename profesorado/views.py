@@ -6,12 +6,17 @@ from .models import Profesorado
 def dashboard(request):
     return render(request, 'dashboard.html', {'section': 'dashboard'})
 
+
 def live(request):
     return render(request, 'live.html', {'section': 'live'})
 
 
-def profesorado_list(request):
-    profes = Profesorado.objects.all()
+def profesorado_list(request, profe_str: str = None):
+    if profe_str is None:
+        profes = Profesorado.objects.all()
+    else:
+        profes = Profesorado.objects.filter(profe_str)
+
     return render(request, 'profes/list.html', {'profes': profes})
 
 
