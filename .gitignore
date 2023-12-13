@@ -1,9 +1,6 @@
 .venv
 db.sqlite3
 sqlite3.exe
-profesorado.csv
-alumnado.csv
-jurado.csv
 __pycache__
 migrations
 users
