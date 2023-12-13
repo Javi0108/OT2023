@@ -28,6 +28,7 @@ urlpatterns = [
     path('profesorado/', include('profesorado.urls', namespace='profesorado')),
     path('jurado/', include('jurado.urls', namespace='jurado')),
     path('alumnado/', include('alumnado.urls', namespace='alumnado')),
+    # path('search/<str:search_str>/', profesorado_views.search, name='search'),
 ]
 
 if settings.DEBUG:

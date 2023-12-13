@@ -3,11 +3,8 @@ from django.shortcuts import get_object_or_404, render
 from .models import Jurado
 
 
-def jurado_list(request, jurado_str: str = None):
-    if jurado_str is None:
-        jurados = Jurado.objects.all()
-    else:
-        jurados = Jurado.objects.filter(jurado_str)
+def jurado_list(request):
+    jurados = Jurado.objects.all()
     return render(request, 'jurados/list.html', {'jurados': jurados})
 
 

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% for resultado in resultados %}
+        <div>
+            <p>{{resultado.name}}</p>
+        </div>
+{% endblock %}

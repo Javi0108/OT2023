@@ -29,7 +29,9 @@
       </div>
       <div>
         <i class="bi bi-music-note-list" style="font-size: 30px;"></i>
-        <p>{{ alumnado.music_style.name }}</p>
+        {% for music_style in music_styles.all %}
+          <p>{{ alumnado.music_style.name }}</p>
+        {% endfor %}
       </div>
     </div>
   </div>
